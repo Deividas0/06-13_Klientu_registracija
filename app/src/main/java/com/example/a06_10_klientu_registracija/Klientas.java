@@ -1,6 +1,8 @@
 package com.example.a06_10_klientu_registracija;
 
 public class Klientas {
+    String username;
+    String password;
     String vardas;
     String pavarde;
     String miestas;
@@ -11,6 +13,10 @@ public class Klientas {
         this.pavarde = pavarde;
         this.miestas = miestas;
         this.telNumeris = telNumeris;
+    }
+    public Klientas(String username, String password){
+        this.username = username;
+        this.password = password;
     }
 
     public String getVardas() {return vardas;}
